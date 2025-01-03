@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project 1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+    <link rel="icon" href="images/real foodies.png">
+    <title>Reservations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .reservation-form {
+            background-color: rgb(202, 206, 6);
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+        label {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div class="headerbar">
+            <div class="account">
+              <ul>
+                <a href="#">
+                  <li>
+                    <i class="fa-solid fa-house-chimney"></i>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
+                  </li>
+                </a>
+                <div class="search" id="searchinput1">
+                  <input type="search">
+                  <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                </div>
+                <a href="">
+                  <li>
+                    <i class="fa-solid fa-user" id="user-mb"></i>
+                  </li>
+                </a>
+              </ul>
+    
+            </div>
+            <div class="nav">
+              <ul>
+                <a href="index.html">
+                  <li>Home</li>
+                </a>
+                <a href="menu.html">
+                  <li>Menu</li>
+                </a>
+                <a href="reservation.html">
+                  <li>Reservation</li>
+                </a>
+                <a href="aboutus.html">
+                  <li>About</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+            <div class="logo">
+             <img src="images/real foodies.png">
+            </div>
+            <div class="bar">
+             <i class="fa-solid fa-bars"></i>
+             <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+            <div class="nav">
+                <ul>
+                   <a href="index.html"><li>Home</li></a>
+                   <a href="menu.html"><li>Menu</li></a>
+                   <a href="reservation.html"><li>Reservations</li></a>
+                   <a href="aboutus.html"><li>About</li></a>
+    
+                </ul>
+            </div>
+            <div class="account">
+                <ul>
+                    <a href="#">
+                      <li>
+                        <i class="fa-solid fa-house-chimney"></i>
+                      </li>
+                    </a>
+                    <a href="#">
+                      <li>
+                        <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
+                      </li>
+                    </a>
+                    <div class="search" id="searchinput2">
+                      <input type="search">
+                      <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                    </div>
+                    <a href="#">
+                      <li>
+                        <i class="fa-solid fa-user" id="user-lap"></i>
+                      </li>
+                    </a>
+                   
+                </ul>
+                
+            </div>
+        </div>
+      </header>
+
+      <div class="reservation-form">
+        <h2>Table Reservation</h2>
+        <form id="reservationForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name"  required placeholder="Enter your full name">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email"  required placeholder="Enter your email address">
+            
+            <label for="date">Reservation Date</label>
+            <input type="date" id="date"  required>
+            
+            <label for="time">Reservation Time</label>
+            <input type="time" id="time"  required>
+            
+            <label for="guests">Number of Guests</label>
+            <select id="guests"  required>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+            </select>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function(event) {
+            alert('Your table is booked successfully!');
+        });
+    </script>
+</body>
+</html>
